@@ -1,0 +1,13 @@
+.hidden-image {
+    display: none;
+}
+
+a:hover .hidden-image {
+    display: block;
+}
+
+.icon {
+    background-color: orangered;
+    width: 1%;
+    height: 1%;
+}
