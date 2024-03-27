@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", function() {
     const images = document.querySelectorAll(".sliders-img-1 img");
-    const prevBtn = document.getElementById("prevBtn");
-    const nextBtn = document.getElementById("nextBtn");
+    const prevBtn = document.getElementById("prevBtn-slider");
+    const nextBtn = document.getElementById("nextBtn-slider");
     const dotsContainer = document.querySelector(".dots-container");
     let index = 0;
 
