@@ -1,81 +1,30 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Countdown Clock</title>
-<style>
-  .countdown {
-    font-family: Arial, sans-serif;
-    font-size: 24px;
-    text-align: center;
-    margin-top: 50px;
-  }
-  .digit {
-    display: inline-block;
-    margin: 0 10px;
-    border-radius: 5px;
-    background-color: #333;
-    color: #fff;
-    width: 40px;
-    height: 40px;
-    line-height: 40px;
-    text-align: center;
-    font-size: 24px;
-    transition: transform 0.5s ease-in-out;
-  }
-  .countdown .digit.moveUp {
-    animation: moveUpAnimation 0.5s ease-in-out;
-  }
+function startCountdown() {
+    var endDate = new Date();
+    endDate.setHours(24, 0, 0, 0); // Set end time to midnight
 
-  @keyframes moveUpAnimation {
-    0% {
-      transform: scale(0);
-    }
-    50% {
-      transform: scale(1.5);
-    }
-    100% {
-      transform: scale(1);
-    }
-  }
-</style>
-</head>
-<body>
+    var countdownInterval = setInterval(function() {
+        var now = new Date().getTime();
+        var distance = endDate - now;
 
-<div class="countdown" id="countdown">
-  <span class="digit" id="hours">00</span>:
-  <span class="digit" id="minutes">00</span>:
-  <span class="digit" id="seconds">00</span>
-</div>
+        var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+        var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
-<script>
-  function countdown() {
-    const now = new Date();
-    const hours = 23 - now.getHours();
-    const minutes = 59 - now.getMinutes();
-    const seconds = 59 - now.getSeconds();
+        hours = String(hours).padStart(2, '0');
+        minutes = String(minutes).padStart(2, '0');
+        seconds = String(seconds).padStart(2, '0');
 
-    updateDigit('hours', pad(hours));
-    updateDigit('minutes', pad(minutes));
-  }
+        document.getElementById("countdown-hour").innerHTML = hours;
+        document.getElementById("countdown-minute").innerHTML = minutes;
+        document.getElementById("countdown-second").innerHTML = seconds;
 
-  function pad(value) {
-    return String(value).padStart(2, '0');
-  }
+        if (distance < 0) {
+        clearInterval(countdownInterval);
+        document.getElementById("countdown-hour").innerHTML = "00";
+        document.getElementById("countdown-minute").innerHTML = "00";
+        document.getElementById("countdown-second").innerHTML = "00";
+        }
+    }, 1000);
+}
 
-  function updateDigit(digitId, value) {
-    const digitElement = document.getElementById(digitId);
-    digitElement.classList.add('moveUp');
-    setTimeout(() => {
-      digitElement.textContent = value;
-      digitElement.classList.remove('moveUp');
-    }, 250); // Animation duration is 0.5s, so halfway through (250ms) we update the content
-  }
-
-  countdown();
-  setInterval(countdown, 1000);
-</script>
-
-</body>
-</html>
+startCountdown();  
