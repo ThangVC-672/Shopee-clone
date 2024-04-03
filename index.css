@@ -1042,13 +1042,13 @@ header {
     display: grid;
     grid-template-columns: auto auto auto auto auto auto;
     gap: 10px;
-    padding: 10px;
+    padding-top: 10px;
 }
 
 .body-middle-suggestion-content-items {
     position: relative;
     width: 200px;
-    height: 300px;
+    height: 310px;
     background-color: #FFFFFF;
 }
 
@@ -1070,7 +1070,7 @@ header {
 
 .body-middle-suggestion-content-items #suggestion-side {
     position: absolute;
-    bottom: 100px;
+    bottom: 110px;
     left: 0;
     width: 186px;
     height: 186px;
@@ -1088,6 +1088,222 @@ header {
     width: 80px;
     height: 20px;
     padding: 5px;
+}
+
+.body-middle-suggestion-content-items #suggestion-text {
+    font-size: 14px;
+    width: 200px;
+    height: 30px;
+    padding: 5px;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden; 
+    text-overflow: ellipsis;
+}
+
+.body-middle-suggestion-content-items #suggestion-prize {
+    color: #EE4D2D;
+    position: absolute;
+    font-size: 16px;
+    bottom: 10px;
+    left: 10px;
+}
+
+.body-middle-suggestion-content-items #suggestion-sold {
+    color: #757575;
+    position: absolute;
+    font-size: 12px;
+    bottom: 10px;
+    right: 10px;
+}
+
+.body-bottom-suggestion-bottom {
+    padding-top: 30px;
+    padding-bottom: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+.body-bottom-suggestion-bottom button {
+    width: 400px;
+    height: 40px;
+    font-size: 14px;
+    background-color: #FFFFFF;
+    border: 1px solid #DADADA;
+}
+
+.body-bottom-suggestion-bottom button:hover {
+    background-color: #F0F0F0;
+}
+
+/*====================BODY PART 8====================*/
+.body-bottom {
+    border-top: 4px solid #F14D2D;
+    background-color: #FFFFFF;
+    font-size: 12px;
+}
+
+.body-bottom-content {
+    padding-left: 300px;
+    padding-right: 300px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    border-bottom: 2px solid #F0F0F0;
+}
+
+.body-bottom-content-item {
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.body-bottom-content-item div {
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.body-bottom-content-item li:not(:last-child) {
+    padding-bottom: 10px;
+}
+
+#headline-text {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+#underline-text {
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.body-bottom-content-item a {
+    text-decoration: underline; 
+}
+
+.body-bottom-content-item a:visited {
+    color: black;
+}
+
+.body-bottom-line {
+    padding-bottom: 50px;
+    border-bottom: 2px solid #F0F0F0;
+}
+
+.body-bottom-categories {
+    padding-top: 50px;
+    color: #757575;
+    font-size: 14px;
+    font-weight: bold;
+    padding-bottom: 50px;
+}
+
+.body-bottom-categories-container a {
+    font-weight: normal;
+    font-size: 12px;
+}
+
+.body-bottom-categories-container a:visited {
+    color: #757575;
+}
+
+.body-bottom-categories-container a:hover {
+    color: #EE4D2D;
+}
+
+#body-bottom-title {
+    color: #757575;
+    padding-bottom: 5px;
+}
+
+.body-bottom-categories-container {
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+}
+
+.body-bottom-categories-item {
+    padding-right: 10px;
+}
+
+.body-bottom-categories-item-details {
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.body-bottom-categories-item-details div {
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+#categories-item-title {
+    font-weight: bold;
+}
+
+.body-bottom-categories-item-details a {
+    display: inline-block;
+}
+
+.bottom-container {
+    color: black;
+    background-color: #FBFBFB;
+    padding-top: 30px;
+    font-size: 12px;
+    padding-left: 300px;
+    padding-right: 300px;
+    padding-bottom: 30px;
+}
+
+#item-detail-follow {
+    display: flex;
+    align-items: center;
+    height: 15px;
+}
+
+#item-detail-follow img {
+    padding-right: 10px;
+}
+
+.categories-item-payment {
+    display: grid;
+    grid-template-columns: 60px 60px 60px;
+    gap: 5px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.categories-item-payment img {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.categories-item-details-grid-container {
+    display: grid;
+    grid-template-columns: 88px 76px;
+    gap: 10px;
+}
+
+.categories-item-details-grid-container img {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+#details-grid-item {
+    grid-row: 1 / 4;
+}
+
+.body-bottom-copyright {
+    padding-top: 20px;
+    font-size: 14px;
+    color: #8A9099;
+}
+
+.body-bottom-copyright-item {
+    display: flex;
+}
+
+.body-bottom-copyright-item a:hover {
+    color: #F04D2D;
+}
+
+.body-bottom-copyright-item a:visited {
+    color: #8A9099;
 }
 
 /*====================FOOTER====================*/
