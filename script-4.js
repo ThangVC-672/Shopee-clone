@@ -14,7 +14,7 @@ $(document).ready(function() {
     $('#nextBtn-flashsale').click(function() {
         if (currentIndex >= 0) {
             currentIndex += itemToMove;
-            $('.body-middle-flashsales-section').css('transform', 'translateX(-' + (currentIndex * 210) + 'px)');
+            $('.body-middle-flashsales-section').css('transform', 'translateX(-' + (currentIndex * 200) + 'px)');
         }
 
         if (currentIndex > 0) {
@@ -31,7 +31,7 @@ $(document).ready(function() {
     $('#prevBtn-flashsale').click(function() {
         if (currentIndex > 0) {
             currentIndex -= itemToMove;
-            $('.body-middle-flashsales-section').css('transform', 'translateX(-' + (currentIndex * 210) + 'px)');
+            $('.body-middle-flashsales-section').css('transform', 'translateX(-' + (currentIndex * 200) + 'px)');
         }
 
         if (currentIndex === 0) {

@@ -16,12 +16,12 @@ $(document).ready(function() {
     $('#nextBtn-category').click(function() {
         if (currentFirstRowIndex === 0) {
             currentFirstRowIndex += itemToMove;
-            $('.first-row .categories-wrapper').css('transform', 'translateX(-' + (currentFirstRowIndex * 126) + 'px)');
+            $('.first-row .categories-wrapper').css('transform', 'translateX(-' + (currentFirstRowIndex * 169) + 'px)');
         }
 
         if (currentSecondRowIndex === 0) {
             currentSecondRowIndex += itemToMove;
-            $('.second-row .categories-wrapper').css('transform', 'translateX(-' + (currentSecondRowIndex * 126) + 'px)');
+            $('.second-row .categories-wrapper').css('transform', 'translateX(-' + (currentSecondRowIndex * 169) + 'px)');
         }
 
         if (currentFirstRowIndex != 0 && currentSecondRowIndex != 0) {
@@ -33,12 +33,12 @@ $(document).ready(function() {
     $('#prevBtn-category').click(function() {
         if (currentFirstRowIndex > 0) {
             currentFirstRowIndex -= itemToMove;
-            $('.first-row .categories-wrapper').css('transform', 'translateX(-' + (currentFirstRowIndex * 126) + 'px)');
+            $('.first-row .categories-wrapper').css('transform', 'translateX(-' + (currentFirstRowIndex * 169) + 'px)');
         }
 
         if (currentSecondRowIndex > 0) {
             currentSecondRowIndex -= itemToMove;
-            $('.second-row .categories-wrapper').css('transform', 'translateX(-' + (currentSecondRowIndex * 126) + 'px)');
+            $('.second-row .categories-wrapper').css('transform', 'translateX(-' + (currentSecondRowIndex * 169) + 'px)');
         }
 
         if (currentFirstRowIndex === 0 && currentSecondRowIndex === 0) {

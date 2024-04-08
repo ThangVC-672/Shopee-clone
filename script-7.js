@@ -14,7 +14,7 @@ $(document).ready(function() {
     $('#hotsearch-nextBtn').click(function() {
         if (currentIndex >= 0 && currentIndex < 12) {
             currentIndex += itemToMove;
-            $('.body-middle-hotsearch-section').css('transform', 'translateX(-' + (currentIndex * 210) + 'px)');
+            $('.body-middle-hotsearch-section').css('transform', 'translateX(-' + (currentIndex * 200) + 'px)');
         }
 
         if (currentIndex > 0) {
@@ -31,7 +31,7 @@ $(document).ready(function() {
     $('#hotsearch-prevBtn').click(function() {
         if (currentIndex > 0) {
             currentIndex -= itemToMove;
-            $('.body-middle-hotsearch-section').css('transform', 'translateX(-' + (currentIndex * 210) + 'px)');
+            $('.body-middle-hotsearch-section').css('transform', 'translateX(-' + (currentIndex * 200) + 'px)');
         }
 
         if (currentIndex === 0) {

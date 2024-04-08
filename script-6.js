@@ -16,12 +16,12 @@ $(document).ready(function() {
     $('#malls-nextBtn-category').click(function() {
         if (currentFirstRowIndex === 0) {
             currentFirstRowIndex += itemToMove;
-            $('.malls-first-row .malls-categories-wrapper').css('transform', 'translateX(-' + (currentFirstRowIndex * 220) + 'px)');
+            $('.malls-first-row .malls-categories-wrapper').css('transform', 'translateX(-' + (currentFirstRowIndex * 195) + 'px)');
         }
 
         if (currentSecondRowIndex === 0) {
             currentSecondRowIndex += itemToMove;
-            $('.malls-second-row .malls-categories-wrapper').css('transform', 'translateX(-' + (currentSecondRowIndex * 220) + 'px)');
+            $('.malls-second-row .malls-categories-wrapper').css('transform', 'translateX(-' + (currentSecondRowIndex * 195) + 'px)');
         }
 
         if (currentFirstRowIndex != 0 && currentSecondRowIndex != 0) {
@@ -33,12 +33,12 @@ $(document).ready(function() {
     $('#malls-prevBtn-category').click(function() {
         if (currentFirstRowIndex > 0) {
             currentFirstRowIndex -= itemToMove;
-            $('.malls-first-row .malls-categories-wrapper').css('transform', 'translateX(-' + (currentFirstRowIndex * 220) + 'px)');
+            $('.malls-first-row .malls-categories-wrapper').css('transform', 'translateX(-' + (currentFirstRowIndex * 195) + 'px)');
         }
 
         if (currentSecondRowIndex > 0) {
             currentSecondRowIndex -= itemToMove;
-            $('.malls-second-row .malls-categories-wrapper').css('transform', 'translateX(-' + (currentSecondRowIndex * 220) + 'px)');
+            $('.malls-second-row .malls-categories-wrapper').css('transform', 'translateX(-' + (currentSecondRowIndex * 195) + 'px)');
         }
 
         if (currentFirstRowIndex === 0 && currentSecondRowIndex === 0) {
