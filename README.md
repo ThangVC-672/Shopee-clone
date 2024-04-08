@@ -10,35 +10,145 @@ To set up your development environment for working on this project, follow these
 
 **Extensions Installation**: Install the following extensions in Visual Studio Code:
 
-- `ext install zhuangtongfa.Material-theme`: This extension installs the Material Theme for Visual Studio Code.
-- `ext install Equinusocio.vsc-material-theme-icons`: This extension provides Material Theme Icons for Visual Studio Code.
-- `ext install Syler.sass-indented`: This extension adds support for SASS (Indented Syntax) to Visual Studio Code.
-- `ext install dsznajder.es7-react-js-snippets`: This extension provides ES7 React/Redux/GraphQL/React-Native snippets.
-- `ext install formulahendry.auto-rename-tag`: Automatically renames paired HTML/XML tag.
-- `ext install formulahendry.auto-close-tag`: Automatically closes HTML/XML tags.
-- `ext install JerryHong.autofilename`: Automatically adds closing tags when you type the opening tag.
-- `ext install alefragnani.Bookmarks`: Adds bookmark functionality to Visual Studio Code.
-- `ext install naumovs.color-highlight`: Highlights web colors in your editor.
-- `ext install bierner.color-info`: Provides hover information about CSS colors.
-- `ext install pranaygp.vscode-css-peek`: Allows peeking to CSS ID and class strings as definitions from HTML files.
-- `ext install ecmel.vscode-html-css`: CSS support for HTML documents.
-- `ext install bradgashler.htmltagwrap`: Wraps selected text with HTML tags.
-- `ext install abusaidm.html-snippets`: Adds HTML snippets to your coding arsenal.
-- `ext install vincaslt.highlight-matching-tag`: Highlights matching closing or opening tag.
-- `ext install Zignd.html-css-class-completion`: Provides CSS class name completion for HTML class attributes based on the definitions found in your workspace.
-- `ext install wix.vscode-import-cost`: Displays import/require package size in the editor.
-- `ext install oderwat.indent-rainbow`: Makes indentation easier to read by alternating the background color.
-- `ext install kisstkondoros.vscode-gutter-preview`: Shows a preview of the method or function definition in the gutter.
-- `ext install xabikos.JavaScriptSnippets`: JavaScript (ES6) code snippets for Visual Studio Code.
-- `ext install ritwickdey.LiveServer`: Launch a local development server with live reload feature for static & dynamic pages.
-- `ext install esbenp.prettier-vscode`: Code formatter using prettier.
-- `ext install christian-kohler.path-intellisense`: Autocompletes filenames.
-- `ext install ChakrounAnas.turbo-console-log`: Adds support for Turbo Console Log, which allows you to quickly add console log statements.
-- `ext install TabNine.tabnine-vscode`: AI code completion.
-- `ext install formulahendry.code-runner`: Run code snippets or code files for multiple languages.
-- `ext install kumar-harsh.graphql-for-vscode`: GraphQL syntax highlighting, linting, auto-complete, and more.
-- `ext install vscode-icons-team.vscode-icons`: Icons for Visual Studio Code.
+- This extension installs the Material Theme for Visual Studio Code: 
+    ```
+    ext install zhuangtongfa.Material-theme
+    ```
 
+- This extension provides Material Theme Icons for Visual Studio Code: 
+    ```
+    ext install Equinusocio.vsc-material-theme-icons
+    ```
+
+- This extension adds support for SASS (Indented Syntax) to Visual Studio Code: 
+    ```
+    ext install Syler.sass-indented
+    ```
+
+- This extension provides ES7 React/Redux/GraphQL/React-Native snippets: 
+    ```
+    ext install dsznajder.es7-react-js-snippets
+    ```
+
+- Automatically renames paired HTML/XML tag: 
+    ```
+    ext install formulahendry.auto-rename-tag
+    ```
+
+- Automatically closes HTML/XML tags: 
+    ```
+    ext install formulahendry.auto-close-tag
+    ```
+
+- Automatically adds closing tags when you type the opening tag: 
+    ```
+    ext install JerryHong.autofilename
+    ```
+
+- Adds bookmark functionality to Visual Studio Code: 
+    ```
+    ext install alefragnani.Bookmarks
+    ```
+
+- Highlights web colors in your editor: 
+    ```
+    ext install naumovs.color-highlight
+    ```
+
+- Provides hover information about CSS colors: 
+    ```
+    ext install bierner.color-info
+    ```
+
+- Allows peeking to CSS ID and class strings as definitions from HTML files: 
+    ```
+    ext install pranaygp.vscode-css-peek
+    ```
+
+- CSS support for HTML documents: 
+    ```
+    ext install ecmel.vscode-html-css
+    ```
+
+- Wraps selected text with HTML tags: 
+    ```
+    ext install bradgashler.htmltagwrap
+    ```
+
+- Adds HTML snippets to your coding arsenal: 
+    ```
+    ext install abusaidm.html-snippets
+    ```
+
+- Highlights matching closing or opening tag: 
+    ```
+    ext install vincaslt.highlight-matching-tag
+    ```
+
+- Provides CSS class name completion for HTML class attributes based on the definitions found in your workspace: 
+    ```
+    ext install Zignd.html-css-class-completion
+    ```
+
+- Displays import/require package size in the editor: 
+    ```
+    ext install wix.vscode-import-cost
+    ```
+
+- Makes indentation easier to read by alternating the background color: 
+    ```
+    ext install oderwat.indent-rainbow
+    ```
+
+- Shows a preview of the method or function definition in the gutter: 
+    ```
+    ext install kisstkondoros.vscode-gutter-preview
+    ```
+
+- JavaScript (ES6) code snippets for Visual Studio Code: 
+    ```
+    ext install xabikos.JavaScriptSnippets
+    ```
+
+- Launch a local development server with live reload feature for static & dynamic pages: 
+    ```
+    ext install ritwickdey.LiveServer
+    ```
+
+- Code formatter using prettier: 
+    ```
+    ext install esbenp.prettier-vscode
+    ```
+
+- Autocompletes filenames: 
+    ```
+    ext install christian-kohler.path-intellisense
+    ```
+
+- Adds support for Turbo Console Log, which allows you to quickly add console log statements: 
+    ```
+    ext install ChakrounAnas.turbo-console-log
+    ```
+
+- AI code completion: 
+    ```
+    ext install TabNine.tabnine-vscode
+    ```
+
+- Run code snippets or code files for multiple languages: 
+    ```
+    ext install formulahendry.code-runner
+    ```
+
+- GraphQL syntax highlighting, linting, auto-complete, and more: 
+    ```
+    ext install kumar-harsh.graphql-for-vscode
+    ```
+
+- Icons for Visual Studio Code: 
+    ```
+    ext install vscode-icons-team.vscode-icons
+    ```
 
 3. **Ubuntu Installation (Optional)**: If you're using Ubuntu and need guidance on installation alongside Windows, refer to [this guide](https://quantrimang.com/cong-nghe/cach-cai-ubuntu-song-song-voi-windows-bang-usb-148331#google_vignette).
 
