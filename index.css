@@ -20,6 +20,19 @@ article {
     margin-top: 120px;
 }
 
+@media only screen and (max-width: 430px) {
+    header {
+        position: fixed; 
+        top: 0;
+        width: 430px;
+        height: 65px;
+    }
+
+    article {
+        margin-top: 45px;
+    }
+}
+
 /*====================HEADER PART 1====================*/
 .header-navbar-content {
     display: flex;
@@ -157,6 +170,48 @@ article {
     color: #EE4D2D;
 }
 
+@media only screen and (max-width: 430px) {
+    .header-navbar {
+        font-size: 5px;
+        width: 430px;
+        padding: 5px 0 5px 5px;
+    }
+
+    .header-navbar-links-items {
+        padding-left: 2px;
+        padding-right: 2px;
+    }
+    
+    .header-navbar-links > div:not(:nth-last-child(-n+3)) {
+        border-right: 1px solid #F86C5C; 
+    }
+    
+    .header-navbar-icons {
+        width: 8px;
+        height: 8px;
+    }
+    
+    .header-navbar-inout > div:not(:last-child) {
+        border-right: 1px solid #F86C5C; 
+    }
+    
+    .header-navbar-inout-items {
+        padding-left: 2px;
+        padding-right: 2px;
+    }
+    
+    .header-navbar-login-items a {
+        padding-left: 2px;
+        padding-right: 2px;
+    }
+
+    .header-navbar-login-items svg {
+        vertical-align: -3px;
+        width: 8px; 
+        height: 8px;
+    }
+}
+
 /*====================HEADER PART 2====================*/
 .header-search-content {
     display: flex;
@@ -194,10 +249,43 @@ article {
     border-radius: 2px;
 }
 
+.header-search-bar div {
+    flex: 1;
+    height: 30px;
+    border-style: none;
+}
+
 .header-search-bar input {
     flex: 1;
     height: 30px;
     border-style: none;
+    width: 100%;
+}
+
+.header-search-bar #box {
+    display: none;
+    position: absolute;
+    z-index: 9999;
+    max-width: 700px;
+    width: 100%;
+}
+
+.header-search-bar #box a {
+    font-size: 14px;
+    color: black;
+    background-color: #FFFFFF;
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.header-search-bar #box a:hover {
+    background-color: #f9f9f9;
+}
+
+.header-search-bar #box a div {
+    padding: 10px 0 ;
 }
 
 .header-search-bar a {
@@ -277,15 +365,80 @@ article {
     padding-top: 10px;
 }
 
+@media only screen and (max-width: 430px) {
+    .header-search {
+        font-size: 5px;
+        padding: 5px;
+        width: 430px; 
+    } 
+    
+    .header-search-logo svg {
+        width: 60px; 
+        height: 30px;
+        padding-right: 15px;
+    }
+    
+    .header-search-container {
+        width: 300px;
+        height: 30px;
+    }
+    
+    .header-search-bar {
+        height: 10px;
+        padding: 5px;
+    }
+    
+    .header-search-bar div {
+        height: 10px;
+    }
+    
+    .header-search-bar input {
+        height: 10px;
+        font-size: 5px;
+    }
+    
+    .header-search-bar .search-button {
+        width: 30px;
+        height: 15px;
+    }
+    
+    .header-search-bar svg {
+        width: 30px;
+        height: 5px;
+        vertical-align: -5px;
+    }
+    
+    .header-shopping-cart {
+        width: 50px;
+        height: 10px;
+    }
+    
+    .header-shopping-cart svg {
+        width: 10px;
+        height: 10px;
+        vertical-align: -25px;
+    }
+    
+    .header-search-links {
+        padding-top: 5px;
+    }
+    
+    .header-search-links a {
+        padding-right: 5px;
+    }
+}
+
 /*====================BODY PART 1====================*/
 .body-top-sliders-content {
+    padding-left: 5px;
     display: flex;
     justify-content: center;
 }
 
 .body-top-sliders {
     background-color: #FFFFFF;
-    width: 1200px; 
+    max-width: 1200px; 
+    width: 100%;
 }
 
 .body-top-sliders-items {
@@ -396,7 +549,7 @@ article {
 .sliders-icon {
     font-size: 13px;
     display: grid;
-    grid-template-columns: 12.5% 12.5% 12.5% 12.5% 12.5% 12.5% 12.5% 12.5%;
+    grid-template-columns: 150px 150px 150px 150px 150px 150px 150px 150px;
     padding-bottom: 10px;
 }
 
@@ -424,12 +577,23 @@ article {
     display: flex;
     justify-content: center;
 }
-
+    
 .body-middle-content {
-    width: 1200px;
+    width: 1200px; 
+}
+
+@media only screen and (max-width: 1200px) and (min-width: 431px) {
+    .body-middle-container {
+        width: 1200px; 
+    }
+    
+    .body-middle-content {
+        width: 100%;
+    }
 }
 
 .body-middle-categories {
+    padding-left: 5px;
     padding-top: 20px;
     position: relative;
     background-color: #F5F5F5;
@@ -530,6 +694,7 @@ article {
 
 /*====================BODY PART 3====================*/
 .body-middle-flashsales {
+    padding-left: 5px;
     padding-top: 20px;
     position: relative;
     background-color: #F5F5F5;
@@ -705,6 +870,7 @@ article {
 
 /*====================BODY PART 4====================*/
 .body-middle-advertisement {
+    padding-left: 5px;
     padding-top: 20px;
 }
 
@@ -714,6 +880,7 @@ article {
 
 /*====================BODY PART 5====================*/
 .body-middle-malls {
+    padding-left: 5px;
     padding-top: 20px;
     position: relative;
     background-color: #F5F5F5;
@@ -935,6 +1102,7 @@ article {
 
 /*====================BODY PART 6====================*/
 .body-middle-hotsearch {
+    padding-left: 5px;
     padding-top: 20px;
     position: relative;
     font-size: 18px;
@@ -1049,6 +1217,7 @@ article {
 
 /*====================BODY PART 7====================*/
 .body-middle-suggestion {
+    padding-left: 5px;
     padding-top: 30px;
     position: relative;
     font-size: 18px;
@@ -1167,6 +1336,7 @@ article {
 
 /*====================BODY PART 8====================*/
 .body-bottom-container {
+    padding-left: 5px;
     border-top: 4px solid #F14D2D;
     display: flex;
     justify-content: center;
@@ -1177,6 +1347,12 @@ article {
     background-color: #FFFFFF;
     font-size: 12px;
     width: 1200px;
+}
+
+@media only screen and (max-width: 1200px) and (min-width: 431px) {
+    .body-bottom-container {
+        width: 1200px;
+    }
 }
 
 .body-bottom-content {
@@ -1283,10 +1459,17 @@ article {
 }
 
 .bottom-content {
+    padding-left: 5px;
     color: black;
     padding-top: 30px;
     font-size: 12px;
     width: 1200px;
+}
+
+@media only screen and (max-width: 1200px) and (min-width: 431px) {
+    .bottom-container {
+        width: 1200px;
+    }
 }
 
 #item-detail-follow {
@@ -1349,6 +1532,12 @@ article {
     color: #707070;
     text-align: center;
     padding: 40px;
+}
+
+@media only screen and (max-width: 1200px) and (min-width: 431px) {
+    .footer {
+        width: 1120px;
+    }
 }
 
 .footer a:visited {
