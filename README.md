@@ -12,7 +12,7 @@ To set up your development environment for working on this project, follow these
 
 - This extension installs the Material Theme for Visual Studio Code: 
     ```
-    pext install zhuangtongfa.Material-theme
+    ext install zhuangtongfa.Material-theme
     ```
 
 - This extension provides Material Theme Icons for Visual Studio Code: 
