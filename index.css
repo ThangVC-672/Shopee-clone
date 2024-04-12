@@ -10,16 +10,24 @@ a {
 
 header {
     background: linear-gradient(to bottom, #F53D2D, #FF6633);
-    position: sticky; 
+    position: fixed; 
     top: 0;
     z-index: 9999;
     width: 100%;
+}
+
+article {
+    margin-top: 120px;
 }
 
 @media only screen and (max-width: 430px) {
     header {
         width: 430px;
         height: 65px;
+    }
+
+    article {
+        margin-top: 70px;
     }
 }
 
@@ -1494,9 +1502,18 @@ header {
 
 .body-middle-suggestion-content-items {
     position: relative;
+    display: inline-block;
     width: 190px;
     height: 310px;
     background-color: #FFFFFF;
+}
+
+.body-middle-suggestion-content-items:hover {
+    width: 188px;
+    height: 308px;
+    border: 1px solid #F14D2D;
+    transition: border 0.3s ease, transform 0.3s ease; 
+    transform: translateY(-5px); 
 }
 
 .body-middle-suggestion-content-items #suggestion-discount {
@@ -1511,7 +1528,7 @@ header {
 }
 
 .body-middle-suggestion-content-items #suggestion-main {
-    width: 190px;
+    width: 188px;
     height: 200px;
 }
 
@@ -1607,6 +1624,12 @@ header {
         width: 100px;
         height: 145px;
     }
+
+    .body-middle-suggestion-content-items:hover {
+        width: 98px;
+        height: 143px;
+        transform: translateY(-2px); 
+    }
     
     .body-middle-suggestion-content-items #suggestion-discount {
         background-color: #FFE97A;
@@ -1615,7 +1638,7 @@ header {
     }
     
     .body-middle-suggestion-content-items #suggestion-main {
-        width: 100px;
+        width: 98px;
         height: 110px;
     }
     
